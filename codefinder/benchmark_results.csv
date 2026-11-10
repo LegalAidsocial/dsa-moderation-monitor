@@ -1,0 +1,5 @@
+date,label,text_set,texts,median_per_second,machine
+2026-11-06,before,test-case strings,10000,6725,"Intel64 Family 6 Model 142 Stepping 12, GenuineIntel | 8 cores | Python 3.12.13"
+2026-11-06,before,comment-like texts,10000,2178,"Intel64 Family 6 Model 142 Stepping 12, GenuineIntel | 8 cores | Python 3.12.13"
+2026-11-06,after,test-case strings,10000,60006,"Intel64 Family 6 Model 142 Stepping 12, GenuineIntel | 8 cores | Python 3.12.13"
+2026-11-06,after,comment-like texts,10000,21004,"Intel64 Family 6 Model 142 Stepping 12, GenuineIntel | 8 cores | Python 3.12.13"

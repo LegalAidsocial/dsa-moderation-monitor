@@ -1,0 +1,16 @@
+﻿code,kind,value,context
+sieg heil,phrase,sieg heil,
+heil hitler,phrase,heil hitler,
+hitler,phrase,hitler,
+deutschland erwache,phrase,deutschland erwache,
+alles für deutschland,phrase,alles fuer deutschland,
+blut und boden,phrase,blut und boden,
+meine ehre heißt treue,phrase,meine ehre heisst treue,
+nsdap,phrase,nsdap,
+88,numeric,(?<!\d)8[\s.\-]?8(?!\d)|(?<!\d)acht\s+acht(?!\d),kameraden|kamerad|heil|^gruss|^gruesse
+18,numeric,(?<!\d)1[\s.\-]?8(?!\d)|(?<!\d)eins\s+acht(?!\d),kameraden|kamerad|heil
+1488,numeric,(?<!\d)14\s?[/\-.]?\s?88(?!\d),kameraden|kamerad|heil
+28,numeric,(?<!\d)28(?!\d),kameraden|kamerad|heil
+c18,numeric,\bc18\b,kameraden|kamerad|heil
+hh,numeric,\bhh\b,kameraden|kamerad|heil
+black-white-red colours,emoji,🖤🤍❤|⬛⬜🟥|🖤🤍🟥|⚫⚪🔴,

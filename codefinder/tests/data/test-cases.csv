@@ -1,0 +1,580 @@
+﻿text,should_match,expected_codes,note
+Sieg Heil an alle,yes,sieg heil,plain phrase
+S i e g  H e i l,yes,sieg heil,spaced letters
+H!tler hatte recht,yes,hitler,leetspeak
+Grüße 88,yes,88,number code as separate token
+Das kostet 88 Euro,no,,"price, not a code"
+Geboren 1988 in Köln,no,,"year, not a code"
+፰፰ Kameraden,yes,88,Ethiopic numerals
+８８,yes,88,full-width digits
+🖤🤍❤️ Deutschland,yes,black-white-red colours,emoji sequence
+Ich liebe ❤️ meinen Hund 🐶,no,,normal emoji
+Deutschland erwache!,yes,deutschland erwache,slogan
+Mein Opa hat 18 Enkel,no,,number in normal sentence
+Sieg Heil,yes,sieg heil,plain phrase
+Kommentar: Sieg Heil,yes,sieg heil,in a sentence
+Nur ein Gruß: Sieg Heil,yes,sieg heil,in a sentence
+Wir sagen Sieg Heil und meinen es so,yes,sieg heil,in a sentence
+"Viele Grüße, Sieg Heil",yes,sieg heil,in a sentence
+Ganz klar: Sieg Heil!,yes,sieg heil,in a sentence
+Das Video endet mit Sieg Heil,yes,sieg heil,in a sentence
+Mein Name ist Max Sieg Heil,yes,sieg heil,in a sentence
+#siegheil,yes,sieg heil,hashtag form
+Bio: Sieg Heil 🇩🇪,yes,sieg heil,in a sentence
+Dann kam der Spruch Sieg Heil im Chat,yes,sieg heil,in a sentence
+sieg heil,yes,sieg heil,plain phrase
+sieg heil an alle,yes,sieg heil,in a sentence
+Kommentar: sieg heil,yes,sieg heil,in a sentence
+Nur ein Gruß: sieg heil,yes,sieg heil,in a sentence
+Wir sagen sieg heil und meinen es so,yes,sieg heil,in a sentence
+"Viele Grüße, sieg heil",yes,sieg heil,in a sentence
+Ganz klar: sieg heil!,yes,sieg heil,in a sentence
+Das Video endet mit sieg heil,yes,sieg heil,in a sentence
+Mein Name ist Max sieg heil,yes,sieg heil,in a sentence
+Bio: sieg heil 🇩🇪,yes,sieg heil,in a sentence
+Dann kam der Spruch sieg heil im Chat,yes,sieg heil,in a sentence
+SIEG HEIL,yes,sieg heil,plain phrase
+SIEG HEIL an alle,yes,sieg heil,in a sentence
+Kommentar: SIEG HEIL,yes,sieg heil,in a sentence
+Nur ein Gruß: SIEG HEIL,yes,sieg heil,in a sentence
+Wir sagen SIEG HEIL und meinen es so,yes,sieg heil,in a sentence
+"Viele Grüße, SIEG HEIL",yes,sieg heil,in a sentence
+Ganz klar: SIEG HEIL!,yes,sieg heil,in a sentence
+Das Video endet mit SIEG HEIL,yes,sieg heil,in a sentence
+Mein Name ist Max SIEG HEIL,yes,sieg heil,in a sentence
+Bio: SIEG HEIL 🇩🇪,yes,sieg heil,in a sentence
+Dann kam der Spruch SIEG HEIL im Chat,yes,sieg heil,in a sentence
+Heil Hitler,yes,heil hitler,plain phrase
+Heil Hitler an alle,yes,heil hitler,in a sentence
+Kommentar: Heil Hitler,yes,heil hitler,in a sentence
+Nur ein Gruß: Heil Hitler,yes,heil hitler,in a sentence
+Wir sagen Heil Hitler und meinen es so,yes,heil hitler,in a sentence
+"Viele Grüße, Heil Hitler",yes,heil hitler,in a sentence
+Ganz klar: Heil Hitler!,yes,heil hitler,in a sentence
+Das Video endet mit Heil Hitler,yes,heil hitler,in a sentence
+Mein Name ist Max Heil Hitler,yes,heil hitler,in a sentence
+#heilhitler,yes,heil hitler,hashtag form
+Bio: Heil Hitler 🇩🇪,yes,heil hitler,in a sentence
+Dann kam der Spruch Heil Hitler im Chat,yes,heil hitler,in a sentence
+heil hitler,yes,heil hitler,plain phrase
+heil hitler an alle,yes,heil hitler,in a sentence
+Kommentar: heil hitler,yes,heil hitler,in a sentence
+Nur ein Gruß: heil hitler,yes,heil hitler,in a sentence
+Wir sagen heil hitler und meinen es so,yes,heil hitler,in a sentence
+"Viele Grüße, heil hitler",yes,heil hitler,in a sentence
+Ganz klar: heil hitler!,yes,heil hitler,in a sentence
+Das Video endet mit heil hitler,yes,heil hitler,in a sentence
+Mein Name ist Max heil hitler,yes,heil hitler,in a sentence
+Bio: heil hitler 🇩🇪,yes,heil hitler,in a sentence
+Dann kam der Spruch heil hitler im Chat,yes,heil hitler,in a sentence
+HEIL HITLER,yes,heil hitler,plain phrase
+HEIL HITLER an alle,yes,heil hitler,in a sentence
+Kommentar: HEIL HITLER,yes,heil hitler,in a sentence
+Nur ein Gruß: HEIL HITLER,yes,heil hitler,in a sentence
+Wir sagen HEIL HITLER und meinen es so,yes,heil hitler,in a sentence
+"Viele Grüße, HEIL HITLER",yes,heil hitler,in a sentence
+Ganz klar: HEIL HITLER!,yes,heil hitler,in a sentence
+Das Video endet mit HEIL HITLER,yes,heil hitler,in a sentence
+Mein Name ist Max HEIL HITLER,yes,heil hitler,in a sentence
+Bio: HEIL HITLER 🇩🇪,yes,heil hitler,in a sentence
+Dann kam der Spruch HEIL HITLER im Chat,yes,heil hitler,in a sentence
+Hitler,yes,hitler,plain phrase
+Hitler an alle,yes,hitler,in a sentence
+Kommentar: Hitler,yes,hitler,in a sentence
+Nur ein Gruß: Hitler,yes,hitler,in a sentence
+Wir sagen Hitler und meinen es so,yes,hitler,in a sentence
+"Viele Grüße, Hitler",yes,hitler,in a sentence
+Ganz klar: Hitler!,yes,hitler,in a sentence
+Das Video endet mit Hitler,yes,hitler,in a sentence
+Mein Name ist Max Hitler,yes,hitler,in a sentence
+#hitler,yes,hitler,hashtag form
+Bio: Hitler 🇩🇪,yes,hitler,in a sentence
+Dann kam der Spruch Hitler im Chat,yes,hitler,in a sentence
+hitler,yes,hitler,plain phrase
+hitler an alle,yes,hitler,in a sentence
+Kommentar: hitler,yes,hitler,in a sentence
+Nur ein Gruß: hitler,yes,hitler,in a sentence
+Wir sagen hitler und meinen es so,yes,hitler,in a sentence
+"Viele Grüße, hitler",yes,hitler,in a sentence
+Ganz klar: hitler!,yes,hitler,in a sentence
+Das Video endet mit hitler,yes,hitler,in a sentence
+Mein Name ist Max hitler,yes,hitler,in a sentence
+Bio: hitler 🇩🇪,yes,hitler,in a sentence
+Dann kam der Spruch hitler im Chat,yes,hitler,in a sentence
+Gruß an die Kameraden: 88,yes,88,number code with extremist context
+88 an alle Kameraden,yes,88,number code with extremist context
+Ganz klar: Heil 88!,yes,88,number code with extremist context
+Das Video endet mit 88 Kameraden,yes,88,number code with extremist context
+Gruß an die Kameraden: 18,yes,18,number code with extremist context
+18 an alle Kameraden,yes,18,number code with extremist context
+Ganz klar: Heil 18!,yes,18,number code with extremist context
+Das Video endet mit 18 Kameraden,yes,18,number code with extremist context
+Gruß an die Kameraden: 1488,yes,1488,number code with extremist context
+1488 an alle Kameraden,yes,1488,number code with extremist context
+Ganz klar: Heil 1488!,yes,1488,number code with extremist context
+Das Video endet mit 1488 Kameraden,yes,1488,number code with extremist context
+Gruß an die Kameraden: 14/88,yes,1488,number code with extremist context
+14/88 an alle Kameraden,yes,1488,number code with extremist context
+Ganz klar: Heil 14/88!,yes,1488,number code with extremist context
+Das Video endet mit 14/88 Kameraden,yes,1488,number code with extremist context
+Gruß an die Kameraden: 28,yes,28,number code with extremist context
+28 an alle Kameraden,yes,28,number code with extremist context
+Ganz klar: Heil 28!,yes,28,number code with extremist context
+Das Video endet mit 28 Kameraden,yes,28,number code with extremist context
+Gruß an die Kameraden: C18,yes,c18,number code with extremist context
+C18 an alle Kameraden,yes,c18,number code with extremist context
+Ganz klar: Heil C18!,yes,c18,number code with extremist context
+Das Video endet mit C18 Kameraden,yes,c18,number code with extremist context
+Gruß an die Kameraden: c18,yes,c18,number code with extremist context
+c18 an alle Kameraden,yes,c18,number code with extremist context
+Ganz klar: Heil c18!,yes,c18,number code with extremist context
+Das Video endet mit c18 Kameraden,yes,c18,number code with extremist context
+Gruß an die Kameraden: HH,yes,hh,number code with extremist context
+HH an alle Kameraden,yes,hh,number code with extremist context
+Ganz klar: Heil HH!,yes,hh,number code with extremist context
+Das Video endet mit HH Kameraden,yes,hh,number code with extremist context
+Deutschland erwache,yes,deutschland erwache,plain phrase
+Deutschland erwache an alle,yes,deutschland erwache,in a sentence
+Kommentar: Deutschland erwache,yes,deutschland erwache,in a sentence
+Nur ein Gruß: Deutschland erwache,yes,deutschland erwache,in a sentence
+Wir sagen Deutschland erwache und meinen es so,yes,deutschland erwache,in a sentence
+"Viele Grüße, Deutschland erwache",yes,deutschland erwache,in a sentence
+Ganz klar: Deutschland erwache!,yes,deutschland erwache,in a sentence
+Das Video endet mit Deutschland erwache,yes,deutschland erwache,in a sentence
+Mein Name ist Max Deutschland erwache,yes,deutschland erwache,in a sentence
+#deutschlanderwache,yes,deutschland erwache,hashtag form
+Bio: Deutschland erwache 🇩🇪,yes,deutschland erwache,in a sentence
+Dann kam der Spruch Deutschland erwache im Chat,yes,deutschland erwache,in a sentence
+deutschland erwache,yes,deutschland erwache,plain phrase
+deutschland erwache an alle,yes,deutschland erwache,in a sentence
+Kommentar: deutschland erwache,yes,deutschland erwache,in a sentence
+Nur ein Gruß: deutschland erwache,yes,deutschland erwache,in a sentence
+Wir sagen deutschland erwache und meinen es so,yes,deutschland erwache,in a sentence
+"Viele Grüße, deutschland erwache",yes,deutschland erwache,in a sentence
+Ganz klar: deutschland erwache!,yes,deutschland erwache,in a sentence
+Das Video endet mit deutschland erwache,yes,deutschland erwache,in a sentence
+Mein Name ist Max deutschland erwache,yes,deutschland erwache,in a sentence
+Bio: deutschland erwache 🇩🇪,yes,deutschland erwache,in a sentence
+Dann kam der Spruch deutschland erwache im Chat,yes,deutschland erwache,in a sentence
+Alles für Deutschland,yes,alles für deutschland,plain phrase
+Alles für Deutschland an alle,yes,alles für deutschland,in a sentence
+Kommentar: Alles für Deutschland,yes,alles für deutschland,in a sentence
+Nur ein Gruß: Alles für Deutschland,yes,alles für deutschland,in a sentence
+Wir sagen Alles für Deutschland und meinen es so,yes,alles für deutschland,in a sentence
+"Viele Grüße, Alles für Deutschland",yes,alles für deutschland,in a sentence
+Ganz klar: Alles für Deutschland!,yes,alles für deutschland,in a sentence
+Das Video endet mit Alles für Deutschland,yes,alles für deutschland,in a sentence
+Mein Name ist Max Alles für Deutschland,yes,alles für deutschland,in a sentence
+#allesfuerdeutschland,yes,alles für deutschland,hashtag form
+Bio: Alles für Deutschland 🇩🇪,yes,alles für deutschland,in a sentence
+Dann kam der Spruch Alles für Deutschland im Chat,yes,alles für deutschland,in a sentence
+alles fuer deutschland,yes,alles für deutschland,plain phrase
+alles fuer deutschland an alle,yes,alles für deutschland,in a sentence
+Kommentar: alles fuer deutschland,yes,alles für deutschland,in a sentence
+Nur ein Gruß: alles fuer deutschland,yes,alles für deutschland,in a sentence
+Wir sagen alles fuer deutschland und meinen es so,yes,alles für deutschland,in a sentence
+"Viele Grüße, alles fuer deutschland",yes,alles für deutschland,in a sentence
+Ganz klar: alles fuer deutschland!,yes,alles für deutschland,in a sentence
+Das Video endet mit alles fuer deutschland,yes,alles für deutschland,in a sentence
+Mein Name ist Max alles fuer deutschland,yes,alles für deutschland,in a sentence
+Bio: alles fuer deutschland 🇩🇪,yes,alles für deutschland,in a sentence
+Dann kam der Spruch alles fuer deutschland im Chat,yes,alles für deutschland,in a sentence
+Blut und Boden,yes,blut und boden,plain phrase
+Blut und Boden an alle,yes,blut und boden,in a sentence
+Kommentar: Blut und Boden,yes,blut und boden,in a sentence
+Nur ein Gruß: Blut und Boden,yes,blut und boden,in a sentence
+Wir sagen Blut und Boden und meinen es so,yes,blut und boden,in a sentence
+"Viele Grüße, Blut und Boden",yes,blut und boden,in a sentence
+Ganz klar: Blut und Boden!,yes,blut und boden,in a sentence
+Das Video endet mit Blut und Boden,yes,blut und boden,in a sentence
+Mein Name ist Max Blut und Boden,yes,blut und boden,in a sentence
+#blutundboden,yes,blut und boden,hashtag form
+Bio: Blut und Boden 🇩🇪,yes,blut und boden,in a sentence
+Dann kam der Spruch Blut und Boden im Chat,yes,blut und boden,in a sentence
+blut und boden,yes,blut und boden,plain phrase
+blut und boden an alle,yes,blut und boden,in a sentence
+Kommentar: blut und boden,yes,blut und boden,in a sentence
+Nur ein Gruß: blut und boden,yes,blut und boden,in a sentence
+Wir sagen blut und boden und meinen es so,yes,blut und boden,in a sentence
+"Viele Grüße, blut und boden",yes,blut und boden,in a sentence
+Ganz klar: blut und boden!,yes,blut und boden,in a sentence
+Das Video endet mit blut und boden,yes,blut und boden,in a sentence
+Mein Name ist Max blut und boden,yes,blut und boden,in a sentence
+Bio: blut und boden 🇩🇪,yes,blut und boden,in a sentence
+Dann kam der Spruch blut und boden im Chat,yes,blut und boden,in a sentence
+Meine Ehre heißt Treue,yes,meine ehre heißt treue,plain phrase
+Meine Ehre heißt Treue an alle,yes,meine ehre heißt treue,in a sentence
+Kommentar: Meine Ehre heißt Treue,yes,meine ehre heißt treue,in a sentence
+Nur ein Gruß: Meine Ehre heißt Treue,yes,meine ehre heißt treue,in a sentence
+Wir sagen Meine Ehre heißt Treue und meinen es so,yes,meine ehre heißt treue,in a sentence
+"Viele Grüße, Meine Ehre heißt Treue",yes,meine ehre heißt treue,in a sentence
+Ganz klar: Meine Ehre heißt Treue!,yes,meine ehre heißt treue,in a sentence
+Das Video endet mit Meine Ehre heißt Treue,yes,meine ehre heißt treue,in a sentence
+Mein Name ist Max Meine Ehre heißt Treue,yes,meine ehre heißt treue,in a sentence
+#meineehreheissttreue,yes,meine ehre heißt treue,hashtag form
+Bio: Meine Ehre heißt Treue 🇩🇪,yes,meine ehre heißt treue,in a sentence
+Dann kam der Spruch Meine Ehre heißt Treue im Chat,yes,meine ehre heißt treue,in a sentence
+meine ehre heisst treue,yes,meine ehre heißt treue,plain phrase
+meine ehre heisst treue an alle,yes,meine ehre heißt treue,in a sentence
+Kommentar: meine ehre heisst treue,yes,meine ehre heißt treue,in a sentence
+Nur ein Gruß: meine ehre heisst treue,yes,meine ehre heißt treue,in a sentence
+Wir sagen meine ehre heisst treue und meinen es so,yes,meine ehre heißt treue,in a sentence
+"Viele Grüße, meine ehre heisst treue",yes,meine ehre heißt treue,in a sentence
+Ganz klar: meine ehre heisst treue!,yes,meine ehre heißt treue,in a sentence
+Das Video endet mit meine ehre heisst treue,yes,meine ehre heißt treue,in a sentence
+Mein Name ist Max meine ehre heisst treue,yes,meine ehre heißt treue,in a sentence
+Bio: meine ehre heisst treue 🇩🇪,yes,meine ehre heißt treue,in a sentence
+Dann kam der Spruch meine ehre heisst treue im Chat,yes,meine ehre heißt treue,in a sentence
+NSDAP,yes,nsdap,plain phrase
+NSDAP an alle,yes,nsdap,in a sentence
+Kommentar: NSDAP,yes,nsdap,in a sentence
+Nur ein Gruß: NSDAP,yes,nsdap,in a sentence
+Wir sagen NSDAP und meinen es so,yes,nsdap,in a sentence
+"Viele Grüße, NSDAP",yes,nsdap,in a sentence
+Ganz klar: NSDAP!,yes,nsdap,in a sentence
+Das Video endet mit NSDAP,yes,nsdap,in a sentence
+Mein Name ist Max NSDAP,yes,nsdap,in a sentence
+#nsdap,yes,nsdap,hashtag form
+Bio: NSDAP 🇩🇪,yes,nsdap,in a sentence
+Dann kam der Spruch NSDAP im Chat,yes,nsdap,in a sentence
+nsdap,yes,nsdap,plain phrase
+nsdap an alle,yes,nsdap,in a sentence
+Kommentar: nsdap,yes,nsdap,in a sentence
+Nur ein Gruß: nsdap,yes,nsdap,in a sentence
+Wir sagen nsdap und meinen es so,yes,nsdap,in a sentence
+"Viele Grüße, nsdap",yes,nsdap,in a sentence
+Ganz klar: nsdap!,yes,nsdap,in a sentence
+Das Video endet mit nsdap,yes,nsdap,in a sentence
+Mein Name ist Max nsdap,yes,nsdap,in a sentence
+Bio: nsdap 🇩🇪,yes,nsdap,in a sentence
+Dann kam der Spruch nsdap im Chat,yes,nsdap,in a sentence
+S i e g   H e i l,yes,sieg heil,spaced letters
+Kommentar: S i e g   H e i l !!,yes,sieg heil,spaced letters
+Kennt ihr das? S i e g   H e i l,yes,sieg heil,spaced letters
+S.i.e.g.H.e.i.l,yes,sieg heil,dotted letters
+Kommentar: S.i.e.g.H.e.i.l !!,yes,sieg heil,dotted letters
+Kennt ihr das? S.i.e.g.H.e.i.l,yes,sieg heil,dotted letters
+S13g H31l,yes,sieg heil,leetspeak
+Kommentar: S13g H31l !!,yes,sieg heil,leetspeak
+Kennt ihr das? S13g H31l,yes,sieg heil,leetspeak
+Sіеg Hеіl,yes,sieg heil,Cyrillic look-alike letters
+Kommentar: Sіеg Hеіl !!,yes,sieg heil,Cyrillic look-alike letters
+Kennt ihr das? Sіеg Hеіl,yes,sieg heil,Cyrillic look-alike letters
+S​i​e​g​ ​H​e​i​l,yes,sieg heil,zero-width characters
+Kommentar: S​i​e​g​ ​H​e​i​l !!,yes,sieg heil,zero-width characters
+Kennt ihr das? S​i​e​g​ ​H​e​i​l,yes,sieg heil,zero-width characters
+Sieg_Heil,yes,sieg heil,underscores
+Kommentar: Sieg_Heil !!,yes,sieg heil,underscores
+Kennt ihr das? Sieg_Heil,yes,sieg heil,underscores
+Siieeg Heeiil,yes,sieg heil,stretched letters
+Kommentar: Siieeg Heeiil !!,yes,sieg heil,stretched letters
+Kennt ihr das? Siieeg Heeiil,yes,sieg heil,stretched letters
+H e i l   H i t l e r,yes,heil hitler,spaced letters
+Kommentar: H e i l   H i t l e r !!,yes,heil hitler,spaced letters
+Kennt ihr das? H e i l   H i t l e r,yes,heil hitler,spaced letters
+H.e.i.l.H.i.t.l.e.r,yes,heil hitler,dotted letters
+Kommentar: H.e.i.l.H.i.t.l.e.r !!,yes,heil hitler,dotted letters
+Kennt ihr das? H.e.i.l.H.i.t.l.e.r,yes,heil hitler,dotted letters
+H31l H1tl3r,yes,heil hitler,leetspeak
+Kommentar: H31l H1tl3r !!,yes,heil hitler,leetspeak
+Kennt ihr das? H31l H1tl3r,yes,heil hitler,leetspeak
+Hеіl Hіtlеr,yes,heil hitler,Cyrillic look-alike letters
+Kommentar: Hеіl Hіtlеr !!,yes,heil hitler,Cyrillic look-alike letters
+Kennt ihr das? Hеіl Hіtlеr,yes,heil hitler,Cyrillic look-alike letters
+H​e​i​l​ ​H​i​t​l​e​r,yes,heil hitler,zero-width characters
+Kommentar: H​e​i​l​ ​H​i​t​l​e​r !!,yes,heil hitler,zero-width characters
+Kennt ihr das? H​e​i​l​ ​H​i​t​l​e​r,yes,heil hitler,zero-width characters
+Heil_Hitler,yes,heil hitler,underscores
+Kommentar: Heil_Hitler !!,yes,heil hitler,underscores
+Kennt ihr das? Heil_Hitler,yes,heil hitler,underscores
+Heeiil Hiitleer,yes,heil hitler,stretched letters
+Kommentar: Heeiil Hiitleer !!,yes,heil hitler,stretched letters
+Kennt ihr das? Heeiil Hiitleer,yes,heil hitler,stretched letters
+H i t l e r,yes,hitler,spaced letters
+Kommentar: H i t l e r !!,yes,hitler,spaced letters
+Kennt ihr das? H i t l e r,yes,hitler,spaced letters
+H.i.t.l.e.r,yes,hitler,dotted letters
+Kommentar: H.i.t.l.e.r !!,yes,hitler,dotted letters
+Kennt ihr das? H.i.t.l.e.r,yes,hitler,dotted letters
+H1tl3r,yes,hitler,leetspeak
+Kommentar: H1tl3r !!,yes,hitler,leetspeak
+Kennt ihr das? H1tl3r,yes,hitler,leetspeak
+Hіtlеr,yes,hitler,Cyrillic look-alike letters
+Kommentar: Hіtlеr !!,yes,hitler,Cyrillic look-alike letters
+Kennt ihr das? Hіtlеr,yes,hitler,Cyrillic look-alike letters
+H​i​t​l​e​r,yes,hitler,zero-width characters
+Kommentar: H​i​t​l​e​r !!,yes,hitler,zero-width characters
+Kennt ihr das? H​i​t​l​e​r,yes,hitler,zero-width characters
+Kommentar: Hitler !!,yes,hitler,underscores
+Kennt ihr das? Hitler,yes,hitler,underscores
+Hiitleer,yes,hitler,stretched letters
+Kommentar: Hiitleer !!,yes,hitler,stretched letters
+Kennt ihr das? Hiitleer,yes,hitler,stretched letters
+D e u t s c h l a n d   E r w a c h e,yes,deutschland erwache,spaced letters
+Kommentar: D e u t s c h l a n d   E r w a c h e !!,yes,deutschland erwache,spaced letters
+Kennt ihr das? D e u t s c h l a n d   E r w a c h e,yes,deutschland erwache,spaced letters
+D.e.u.t.s.c.h.l.a.n.d.E.r.w.a.c.h.e,yes,deutschland erwache,dotted letters
+Kommentar: D.e.u.t.s.c.h.l.a.n.d.E.r.w.a.c.h.e !!,yes,deutschland erwache,dotted letters
+Kennt ihr das? D.e.u.t.s.c.h.l.a.n.d.E.r.w.a.c.h.e,yes,deutschland erwache,dotted letters
+D3utschl4nd Erw4ch3,yes,deutschland erwache,leetspeak
+Kommentar: D3utschl4nd Erw4ch3 !!,yes,deutschland erwache,leetspeak
+Kennt ihr das? D3utschl4nd Erw4ch3,yes,deutschland erwache,leetspeak
+Dеutschlаnd Erwаchе,yes,deutschland erwache,Cyrillic look-alike letters
+Kommentar: Dеutschlаnd Erwаchе !!,yes,deutschland erwache,Cyrillic look-alike letters
+Kennt ihr das? Dеutschlаnd Erwаchе,yes,deutschland erwache,Cyrillic look-alike letters
+D​e​u​t​s​c​h​l​a​n​d​ ​E​r​w​a​c​h​e,yes,deutschland erwache,zero-width characters
+Kommentar: D​e​u​t​s​c​h​l​a​n​d​ ​E​r​w​a​c​h​e !!,yes,deutschland erwache,zero-width characters
+Kennt ihr das? D​e​u​t​s​c​h​l​a​n​d​ ​E​r​w​a​c​h​e,yes,deutschland erwache,zero-width characters
+Deutschland_Erwache,yes,deutschland erwache,underscores
+Kommentar: Deutschland_Erwache !!,yes,deutschland erwache,underscores
+Kennt ihr das? Deutschland_Erwache,yes,deutschland erwache,underscores
+Deeutschland Erwachee,yes,deutschland erwache,stretched letters
+Kommentar: Deeutschland Erwachee !!,yes,deutschland erwache,stretched letters
+Kennt ihr das? Deeutschland Erwachee,yes,deutschland erwache,stretched letters
+A l l e s   F ü r   D e u t s c h l a n d,yes,alles für deutschland,spaced letters
+Kommentar: A l l e s   F ü r   D e u t s c h l a n d !!,yes,alles für deutschland,spaced letters
+Kennt ihr das? A l l e s   F ü r   D e u t s c h l a n d,yes,alles für deutschland,spaced letters
+A.l.l.e.s.F.ü.r.D.e.u.t.s.c.h.l.a.n.d,yes,alles für deutschland,dotted letters
+Kommentar: A.l.l.e.s.F.ü.r.D.e.u.t.s.c.h.l.a.n.d !!,yes,alles für deutschland,dotted letters
+Kennt ihr das? A.l.l.e.s.F.ü.r.D.e.u.t.s.c.h.l.a.n.d,yes,alles für deutschland,dotted letters
+All3s Für D3utschl4nd,yes,alles für deutschland,leetspeak
+Kommentar: All3s Für D3utschl4nd !!,yes,alles für deutschland,leetspeak
+Kennt ihr das? All3s Für D3utschl4nd,yes,alles für deutschland,leetspeak
+Allеs Für Dеutschlаnd,yes,alles für deutschland,Cyrillic look-alike letters
+Kommentar: Allеs Für Dеutschlаnd !!,yes,alles für deutschland,Cyrillic look-alike letters
+Kennt ihr das? Allеs Für Dеutschlаnd,yes,alles für deutschland,Cyrillic look-alike letters
+A​l​l​e​s​ ​F​ü​r​ ​D​e​u​t​s​c​h​l​a​n​d,yes,alles für deutschland,zero-width characters
+Kommentar: A​l​l​e​s​ ​F​ü​r​ ​D​e​u​t​s​c​h​l​a​n​d !!,yes,alles für deutschland,zero-width characters
+Kennt ihr das? A​l​l​e​s​ ​F​ü​r​ ​D​e​u​t​s​c​h​l​a​n​d,yes,alles für deutschland,zero-width characters
+Alles_Für_Deutschland,yes,alles für deutschland,underscores
+Kommentar: Alles_Für_Deutschland !!,yes,alles für deutschland,underscores
+Kennt ihr das? Alles_Für_Deutschland,yes,alles für deutschland,underscores
+Allees Für Deeutschland,yes,alles für deutschland,stretched letters
+Kommentar: Allees Für Deeutschland !!,yes,alles für deutschland,stretched letters
+Kennt ihr das? Allees Für Deeutschland,yes,alles für deutschland,stretched letters
+B l u t   U n d   B o d e n,yes,blut und boden,spaced letters
+Kommentar: B l u t   U n d   B o d e n !!,yes,blut und boden,spaced letters
+Kennt ihr das? B l u t   U n d   B o d e n,yes,blut und boden,spaced letters
+B.l.u.t.U.n.d.B.o.d.e.n,yes,blut und boden,dotted letters
+Kommentar: B.l.u.t.U.n.d.B.o.d.e.n !!,yes,blut und boden,dotted letters
+Kennt ihr das? B.l.u.t.U.n.d.B.o.d.e.n,yes,blut und boden,dotted letters
+Blut Und B0d3n,yes,blut und boden,leetspeak
+Kommentar: Blut Und B0d3n !!,yes,blut und boden,leetspeak
+Kennt ihr das? Blut Und B0d3n,yes,blut und boden,leetspeak
+Blut Und Bоdеn,yes,blut und boden,Cyrillic look-alike letters
+Kommentar: Blut Und Bоdеn !!,yes,blut und boden,Cyrillic look-alike letters
+Kennt ihr das? Blut Und Bоdеn,yes,blut und boden,Cyrillic look-alike letters
+B​l​u​t​ ​U​n​d​ ​B​o​d​e​n,yes,blut und boden,zero-width characters
+Kommentar: B​l​u​t​ ​U​n​d​ ​B​o​d​e​n !!,yes,blut und boden,zero-width characters
+Kennt ihr das? B​l​u​t​ ​U​n​d​ ​B​o​d​e​n,yes,blut und boden,zero-width characters
+Blut_Und_Boden,yes,blut und boden,underscores
+Kommentar: Blut_Und_Boden !!,yes,blut und boden,underscores
+Kennt ihr das? Blut_Und_Boden,yes,blut und boden,underscores
+Blut Und Bodeen,yes,blut und boden,stretched letters
+Kommentar: Blut Und Bodeen !!,yes,blut und boden,stretched letters
+Kennt ihr das? Blut Und Bodeen,yes,blut und boden,stretched letters
+Gruß an die Kameraden ８８,yes,88,full-width digits
+Kommentar: ８８ für immer Kameraden,yes,88,full-width digits
+Heil ８８,yes,88,full-width digits
+８８ Kameraden unterwegs,yes,88,full-width digits
+Gruß an die Kameraden ፰፰,yes,88,Ethiopic numerals
+Kommentar: ፰፰ für immer Kameraden,yes,88,Ethiopic numerals
+Heil ፰፰,yes,88,Ethiopic numerals
+፰፰ Kameraden unterwegs,yes,88,Ethiopic numerals
+Gruß 8 8 an alle Kameraden,yes,88,spelled or spaced number
+Gruß 8-8 Kameraden,yes,88,spelled or spaced number
+Gruß acht acht Kameraden,yes,88,spelled or spaced number
+Gruß an die Kameraden １８,yes,18,full-width digits
+Kommentar: １８ für immer Kameraden,yes,18,full-width digits
+Heil １８,yes,18,full-width digits
+１８ Kameraden unterwegs,yes,18,full-width digits
+Gruß an die Kameraden ፩፰,yes,18,Ethiopic numerals
+Kommentar: ፩፰ für immer Kameraden,yes,18,Ethiopic numerals
+Heil ፩፰,yes,18,Ethiopic numerals
+፩፰ Kameraden unterwegs,yes,18,Ethiopic numerals
+Gruß 1 8 Kameraden,yes,18,spelled or spaced number
+Gruß eins acht Kameraden,yes,18,spelled or spaced number
+Gruß 1-8 Kameraden,yes,18,spelled or spaced number
+Für 🖤🤍❤️ immer,yes,black-white-red colours,emoji sequence
+Mein Land 🖤🤍❤️ 🖤🤍❤️,yes,black-white-red colours,emoji sequence
+Bio: 🖤🤍❤️,yes,black-white-red colours,emoji sequence
+🖤🤍❤️ Kameraden,yes,black-white-red colours,emoji sequence
+⬛⬜🟥 Deutschland,yes,black-white-red colours,emoji sequence
+Für ⬛⬜🟥 immer,yes,black-white-red colours,emoji sequence
+Mein Land ⬛⬜🟥 ⬛⬜🟥,yes,black-white-red colours,emoji sequence
+Bio: ⬛⬜🟥,yes,black-white-red colours,emoji sequence
+⬛⬜🟥 Kameraden,yes,black-white-red colours,emoji sequence
+🖤🤍🟥 Deutschland,yes,black-white-red colours,emoji sequence
+Für 🖤🤍🟥 immer,yes,black-white-red colours,emoji sequence
+Mein Land 🖤🤍🟥 🖤🤍🟥,yes,black-white-red colours,emoji sequence
+Bio: 🖤🤍🟥,yes,black-white-red colours,emoji sequence
+🖤🤍🟥 Kameraden,yes,black-white-red colours,emoji sequence
+⚫⚪🔴 Deutschland,yes,black-white-red colours,emoji sequence
+Für ⚫⚪🔴 immer,yes,black-white-red colours,emoji sequence
+Mein Land ⚫⚪🔴 ⚫⚪🔴,yes,black-white-red colours,emoji sequence
+Bio: ⚫⚪🔴,yes,black-white-red colours,emoji sequence
+⚫⚪🔴 Kameraden,yes,black-white-red colours,emoji sequence
+Bus 88 fährt um 7 Uhr,no,,"bus line, not a code"
+Zimmer 88 im zweiten Stock,no,,"room number, not a code"
+Ich bin 88 Jahre alt,no,,"age, not a code"
+88 Grad heute in München,no,,"temperature, not a code"
+Seite 88 im Buch,no,,"page number, not a code"
+Die Hausnummer ist 88,no,,"house number, not a code"
+Treffen um 88 Uhr,no,,"clock time, not a code"
+88 Prozent der Befragten,no,,"statistic, not a code"
+Mein Opa hat 88 Enkel,no,,"count in normal sentence, not a code"
+Tor in der 88. Minute,no,,"football minute, not a code"
+Platz 88 in der Tabelle,no,,"ranking, not a code"
+Das kostet 18 Euro,no,,"price, not a code"
+Bus 18 fährt um 7 Uhr,no,,"bus line, not a code"
+Zimmer 18 im zweiten Stock,no,,"room number, not a code"
+Ich bin 18 Jahre alt,no,,"age, not a code"
+18 Grad heute in München,no,,"temperature, not a code"
+Seite 18 im Buch,no,,"page number, not a code"
+Die Hausnummer ist 18,no,,"house number, not a code"
+Treffen um 18 Uhr,no,,"clock time, not a code"
+18 Prozent der Befragten,no,,"statistic, not a code"
+Tor in der 18. Minute,no,,"football minute, not a code"
+Platz 18 in der Tabelle,no,,"ranking, not a code"
+Das kostet 28 Euro,no,,"price, not a code"
+Bus 28 fährt um 7 Uhr,no,,"bus line, not a code"
+Zimmer 28 im zweiten Stock,no,,"room number, not a code"
+Ich bin 28 Jahre alt,no,,"age, not a code"
+28 Grad heute in München,no,,"temperature, not a code"
+Seite 28 im Buch,no,,"page number, not a code"
+Die Hausnummer ist 28,no,,"house number, not a code"
+Treffen um 28 Uhr,no,,"clock time, not a code"
+28 Prozent der Befragten,no,,"statistic, not a code"
+Mein Opa hat 28 Enkel,no,,"count in normal sentence, not a code"
+Tor in der 28. Minute,no,,"football minute, not a code"
+Platz 28 in der Tabelle,no,,"ranking, not a code"
+Das kostet 14 Euro,no,,"price, not a code"
+Bus 14 fährt um 7 Uhr,no,,"bus line, not a code"
+Zimmer 14 im zweiten Stock,no,,"room number, not a code"
+Ich bin 14 Jahre alt,no,,"age, not a code"
+14 Grad heute in München,no,,"temperature, not a code"
+Seite 14 im Buch,no,,"page number, not a code"
+Die Hausnummer ist 14,no,,"house number, not a code"
+Treffen um 14 Uhr,no,,"clock time, not a code"
+14 Prozent der Befragten,no,,"statistic, not a code"
+Mein Opa hat 14 Enkel,no,,"count in normal sentence, not a code"
+Tor in der 14. Minute,no,,"football minute, not a code"
+Platz 14 in der Tabelle,no,,"ranking, not a code"
+Das war im Jahr 1988,no,,"year, not a code"
+Baujahr 1988,no,,"year, not a code"
+Geboren 2018 in Köln,no,,"year, not a code"
+Das war im Jahr 2018,no,,"year, not a code"
+Baujahr 2018,no,,"year, not a code"
+Geboren 1828 in Köln,no,,"year, not a code"
+Das war im Jahr 1828,no,,"year, not a code"
+Baujahr 1828,no,,"year, not a code"
+Geboren 2088 in Köln,no,,"year, not a code"
+Das war im Jahr 2088,no,,"year, not a code"
+Baujahr 2088,no,,"year, not a code"
+Geboren 1918 in Köln,no,,"year, not a code"
+Das war im Jahr 1918,no,,"year, not a code"
+Baujahr 1918,no,,"year, not a code"
+Geboren 2028 in Köln,no,,"year, not a code"
+Das war im Jahr 2028,no,,"year, not a code"
+Baujahr 2028,no,,"year, not a code"
+Tel. 030 8818 2288,no,,phone number
+Bestellnummer 18-88-28,no,,order number
+IBAN endet auf 1888,no,,partial account digits
+Linie U8 und Bus 18,no,,transit lines
+Kennzeichen HH-AB 1234,no,,Hamburg licence plate
+Ich wohne in HH und arbeite in HB,no,,city abbreviations
+HH ist die Abkürzung für Hansestadt Hamburg,no,,city abbreviation
+Semester SS 2024,no,,university term abbreviation
+Produktcode C18 im Katalog,no,,product code
+Schraube M18 und M28,no,,screw sizes
+Das Modell C180 ist lieferbar,no,,car model
+Raum C18 ist frei,no,,room code
+Sieg im Finale gestern Abend,no,,"Sieg alone, sports"
+Der Sieg gehört dem Team,no,,Sieg alone
+Heilpraktiker in Berlin,no,,Heil inside a longer word
+Die Heilung dauert drei Wochen,no,,Heil inside a longer word
+Heilbronn liegt am Neckar,no,,city name
+Hitzewelle in ganz Deutschland,no,,"Hitze, not Hitler"
+Die Hitparade läuft im Radio,no,,"Hit, not Hitler"
+Der Song ist ein Hit,no,,"Hit, not Hitler"
+Heiligabend feiern wir zuhause,no,,Heil inside a longer word
+"Heil dir, mein Freund, gute Besserung",no,,common greeting without Sieg
+Das Blut und der Boden werden getestet,no,,"words apart, lab context"
+Blutdruck messen,no,,medical word
+Der Boden ist nass,no,,ordinary word
+Bodenständig und ehrlich,no,,ordinary word
+Deutschland erreicht das Finale,no,,Deutschland alone
+Deutschland spielt heute Abend,no,,Deutschland alone
+Erwache früh und trinke Wasser,no,,erwache without Deutschland
+Alles für die Familie,no,,slogan-like but harmless
+"Alles für den Hund, nichts für mich",no,,slogan-like but harmless
+Meine Ehre ist mir wichtig,no,,ordinary sentence
+Treue Kunden bekommen Rabatt,no,,treue in normal use
+Die NASDAQ schließt höher,no,,"stock exchange, not NSDAP"
+Der Nachrichtendienst der DAP-Agentur,no,,abbreviation in agency name
+Sieg und Niederlage gehören zum Sport,no,,Sieg alone
+Reiseführer Heidelberg 2024,no,,ordinary text
+"Hallo zusammen, schönen Tag",no,,greeting
+"Guten Morgen, wie geht es dir?",no,,greeting
+Hier ist mein Rezept für Käsekuchen,no,,recipe
+Wie wird das Wetter morgen?,no,,weather question
+Spiel des Jahres im Fernsehen,no,,ordinary text
+Guten Morgen ☀️,no,,normal emoji or colours
+Schwarzer Kaffee ☕ und weißer Zucker 🍚,no,,normal emoji or colours
+Valentinstag 🖤❤️,no,,normal emoji or colours
+Fußball heute 🇩🇪⚽,no,,normal emoji or colours
+Party am Samstag 🎉🥳,no,,normal emoji or colours
+🖤 für meine Katze,no,,normal emoji or colours
+🤍 Hochzeit in Weiß,no,,normal emoji or colours
+🟥 Karte für den Spieler,no,,normal emoji or colours
+⚫⚪ Schachbrett Muster,no,,normal emoji or colours
+Rote Karte ⬛⬜ Brettspiel,no,,normal emoji or colours
+Pizza 🍕 und Pasta 🍝,no,,normal emoji or colours
+Urlaub am Meer 🌊☀️,no,,normal emoji or colours
+Schwarz-Weiß-Foto von Oma,no,,normal emoji or colours
+"Mein Outfit: schwarz, weiß und rot",no,,normal emoji or colours
+"Trikot in Schwarz, Weiß und Rot, Verein Rot-Weiß Essen",no,,normal emoji or colours
+"Die Zahl 88 steht in der rechten Szene für HH, das erklärt die Beratungsstelle",no,,"mentions code; policy decision, confirm with team"
+Wir treffen uns morgen am Bahnhof,no,,ordinary sentence
+Das Konzert beginnt um acht,no,,ordinary sentence
+Hast du das Spiel gesehen?,no,,ordinary sentence
+Ich koche heute Nudeln,no,,ordinary sentence
+Der Zug hat Verspätung,no,,ordinary sentence
+Danke für die schnelle Antwort,no,,ordinary sentence
+Die Prüfung war schwerer als gedacht,no,,ordinary sentence
+Mein Auto muss zur Inspektion,no,,ordinary sentence
+Am Wochenende fahre ich zu meiner Oma,no,,ordinary sentence
+Der Kuchen ist im Ofen,no,,ordinary sentence
+Schönes Foto aus dem Urlaub,no,,ordinary sentence
+Das Video war richtig lustig,no,,ordinary sentence
+Welche Musik hörst du gerade?,no,,ordinary sentence
+Ich lerne gerade Python,no,,ordinary sentence
+Der Bäcker hat sonntags geöffnet,no,,ordinary sentence
+Die Wahl der Mittel ist wichtig,no,,ordinary sentence
+Wir gehen morgen wandern,no,,ordinary sentence
+Das Kind spielt im Garten,no,,ordinary sentence
+Danke fürs Teilen,no,,ordinary sentence
+Gute Besserung und viel Erfolg,no,,ordinary sentence
+"Viele Grüße aus HH, das Wetter ist super ☀️",no,,normal sentence with numbers and emoji
+"Sonnige Grüße, heute 28 Grad in Berlin 🌞",no,,normal sentence with numbers and emoji
+"Liebe Grüße von Zimmer 18, wir sind gut angekommen ✈️",no,,normal sentence with numbers and emoji
+"Grüße an alle, Bus 88 fällt heute aus 🚌",no,,normal sentence with numbers and emoji
+Gruß aus HH an meine Familie ❤️,no,,normal sentence with numbers and emoji
+"Heil bleiben, Leute, 18 Grad und Regen ☔",no,,normal sentence with numbers and emoji
+Mein Sohn wird heute 18 🎂🎉,no,,normal sentence with numbers and emoji
+Das Konto hat 1.488 Euro Guthaben 💶,no,,normal sentence with numbers and emoji
+"Tickets kosten 14,88 Euro pro Person 🎟️",no,,normal sentence with numbers and emoji
+Wir haben 28 Stunden gearbeitet 😴,no,,normal sentence with numbers and emoji
+Der Hamburger SV (HH) spielt am Samstag ⚽,no,,normal sentence with numbers and emoji
+Die Kameraden der Feuerwehr haben 88 Einsätze gefahren 🚒,no,,normal sentence with numbers and emoji
+Kameraden vom Sportverein treffen sich um 18 Uhr 🏃,no,,normal sentence with numbers and emoji
+Geburtstagsgrüße zum 88. Geburtstag von Oma 🎂,no,,normal sentence with numbers and emoji
+Er hat C18 Schmieröl gekauft 🛢️,no,,normal sentence with numbers and emoji
+"Sieg für unser Team, 3:1 in der 88. Minute 🏆",no,,normal sentence with numbers and emoji
+"Heil- und Kräuterkunde Kurs, 28 Plätze frei 🌿",no,,normal sentence with numbers and emoji
+Hitzewarnung: 38 Grad am Wochenende 🥵,no,,normal sentence with numbers and emoji
+Die 18 Teilnehmer bekommen eine Urkunde 📜,no,,normal sentence with numbers and emoji
+🖤🤍 Hochzeit am 18. Mai 💍,no,,normal sentence with numbers and emoji
+"Pizza für 8,88 Euro 🍕",no,,normal sentence with numbers and emoji
+Ich habe 88 Likes bekommen 👍,no,,normal sentence with numbers and emoji
+Es gibt 14 Stühle und 88 Bücher 📚,no,,normal sentence with numbers and emoji
