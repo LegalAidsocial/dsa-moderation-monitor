@@ -1,0 +1,28 @@
+[project]
+name = "service"
+version = "0.1.0"
+description = "FastAPI service wrapping codefinder and the ONNX symbol classifier"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "codefinder",
+    "fastapi>=0.118.0",
+    "uvicorn>=0.38.0",
+    "python-multipart>=0.0.20",
+    "numpy>=2.0.0",
+    "onnxruntime>=1.20.0",
+    "pillow>=13.0.0",
+]
+
+[tool.uv.sources]
+codefinder = { workspace = true }
+
+[build-system]
+requires = ["uv_build>=0.11.19,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "httpx>=0.28.0",
+]
