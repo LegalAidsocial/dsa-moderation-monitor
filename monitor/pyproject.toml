@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "DSA platform moderation monitor: monthly totals from the Transparency Database"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = ["duckdb>=1.0"]
+dependencies = ["duckdb>=1.0", "requests>=2.31"]
 
 [project.scripts]
 monitor = "monitor.cli:main"
