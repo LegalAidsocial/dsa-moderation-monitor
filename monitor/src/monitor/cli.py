@@ -1,4 +1,5 @@
-"""Command line: `monitor build [--months N]`, `monitor update`, `monitor alerts`."""
+"""Command line: `monitor build [--months N]`, `monitor update`,
+`monitor alerts`, `monitor report`."""
 
 import argparse
 
@@ -6,6 +7,7 @@ from monitor.alerts import find_alerts
 from monitor.answers import answer_questions
 from monitor.config import load_settings
 from monitor.fetch import download_months, last_n_months
+from monitor.report import build_report
 from monitor.scale import build_scale
 from monitor.totals import build_totals
 
@@ -18,6 +20,7 @@ def _rebuild(months: list[str]) -> None:
     build_totals(s.data_dir, s.out_dir, s.country, s.memory_limit)
     build_scale(s.agg_dir, s.out_dir, s.memory_limit)
     answer_questions(s.out_dir)
+    build_report(s.out_dir)
 
 
 def build(months: int) -> None:
@@ -41,6 +44,7 @@ def main() -> None:
 
     sub.add_parser("update", help="fetch the newest month and rebuild the report")
     sub.add_parser("alerts", help="flag sudden month-to-month changes")
+    sub.add_parser("report", help="regenerate the static HTML report only, no re-fetch")
 
     args = parser.parse_args()
     if args.command == "build":
@@ -49,6 +53,9 @@ def main() -> None:
         update()
     elif args.command == "alerts":
         print(find_alerts(load_settings().out_dir))
+    elif args.command == "report":
+        path = build_report(load_settings().out_dir)
+        print(f"Wrote {path}")
 
 
 if __name__ == "__main__":
