@@ -98,8 +98,18 @@ def _numeric_hit(rule: NumericRule, norm: str) -> bool:
     return False
 
 
-def find_codes(text: str, config_path: str | None = None) -> list[str]:
-    """Return the names of all codes found in text (empty list if none)."""
+def find_codes(text: str | None, config_path: str | None = None) -> list[str]:
+    """Return the names of all codes found in text (empty list if none).
+
+    Accepts any text: comments, OCR output, text read by a vision model.
+    None, empty and whitespace-only text give an empty list.
+    """
+    if text is None:
+        return []
+    if not isinstance(text, str):
+        raise TypeError(f"text must be str or None, not {type(text).__name__}")
+    if not text.strip():
+        return []
     path = config_path or os.environ.get("CODEFINDER_CONFIG") or str(DEFAULT_CONFIG)
     rules = load_rules(path)
     norm = normalize(text)
@@ -129,3 +139,15 @@ def find_codes(text: str, config_path: str | None = None) -> list[str]:
         found.update(code for code, seqs in rules.emoji if any(s in flat for s in seqs))
 
     return sorted(found, key=rules.order.__getitem__)
+
+
+def make_hits(codes: list[str], source: str) -> list[dict[str, str]]:
+    """Label each code with where the text came from ("comment", "ocr", "vision")."""
+    return [{"code": code, "source": source} for code in codes]
+
+
+def scan_text(
+    text: str | None, source: str = "text", config_path: str | None = None
+) -> list[dict[str, str]]:
+    """find_codes for any extracted text, with hits labelled by source."""
+    return make_hits(find_codes(text, config_path), source)
