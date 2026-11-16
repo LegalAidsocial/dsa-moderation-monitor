@@ -15,10 +15,11 @@ import os
 import sys
 import tempfile
 import time
+from collections.abc import Awaitable, Callable
 from pathlib import Path
 
 from codefinder import find_codes
-from fastapi import FastAPI, Request, UploadFile
+from fastapi import FastAPI, Request, Response, UploadFile
 from fastapi.responses import JSONResponse
 
 from service.image_model import ImageClassifier
@@ -42,7 +43,9 @@ def get_classifier() -> ImageClassifier:
 
 
 @app.middleware("http")
-async def log_requests(request: Request, call_next):
+async def log_requests(
+    request: Request, call_next: Callable[[Request], Awaitable[Response]]
+) -> Response:
     start = time.monotonic()
     response = await call_next(request)
     logger.info(

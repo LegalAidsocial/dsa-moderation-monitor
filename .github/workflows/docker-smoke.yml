@@ -1,0 +1,26 @@
+name: docker-smoke
+on:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and start
+        run: docker compose up -d --build
+      - name: Wait for the service and check /text
+        run: |
+          for i in $(seq 1 30); do
+            curl -sf -X POST localhost:8000/text -H 'Content-Type: application/json' -d '{"text":"hello"}' && break
+            sleep 2
+          done
+          curl -sf -X POST localhost:8000/text -H 'Content-Type: application/json' -d '{"text":"Deutschland erwache"}' | grep -i erwache
+      - name: Check /image
+        run: curl -sf -F file=@service/tests/fixtures/banned_sample.jpg localhost:8000/image
+      - name: Logs on failure
+        if: failure()
+        run: docker compose logs
+      - name: Stop
+        if: always()
+        run: docker compose down
