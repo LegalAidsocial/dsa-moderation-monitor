@@ -1,0 +1,14 @@
+services:
+  service:
+    build: .
+    ports:
+      - "${PORT:-8000}:8000"
+    environment:
+      HOST: "0.0.0.0"
+      PORT: "8000"
+      CODEFINDER_CONFIG: "${CODEFINDER_CONFIG:-/app/codefinder/config/codes.csv}"
+      MODEL_PATH: "${MODEL_PATH:-/app/service/models/symbol_classifier.onnx}"
+      NAMES_PATH: "${NAMES_PATH:-/app/service/models/symbol_classifier.names.json}"
+      OCR_LANG: "${OCR_LANG:-deu}"
+      OCR_TIMEOUT: "${OCR_TIMEOUT:-10}"
+    restart: unless-stopped
