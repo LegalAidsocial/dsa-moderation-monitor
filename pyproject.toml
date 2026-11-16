@@ -1,2 +1,2 @@
 [tool.uv.workspace]
-members = ["codefinder", "service"]
+members = ["codefinder", "service", "monitor"]
