@@ -18,6 +18,13 @@ jobs:
           curl -sf -X POST localhost:8000/text -H 'Content-Type: application/json' -d '{"text":"Deutschland erwache"}' | grep -i erwache
       - name: Check /image
         run: curl -sf -F file=@service/tests/fixtures/banned_sample.jpg localhost:8000/image
+      - name: Wait for the monitor dashboard
+        run: |
+          for i in $(seq 1 30); do
+            curl -sf localhost:8501/_stcore/health && break
+            sleep 2
+          done
+          curl -sf localhost:8501/_stcore/health
       - name: Logs on failure
         if: failure()
         run: docker compose logs
