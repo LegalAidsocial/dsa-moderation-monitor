@@ -18,10 +18,7 @@ from pathlib import Path
 
 import requests
 
-BASE_URL = (
-    "https://d3vax7phxnku8l.cloudfront.net/agg/pqt/data/tdb_data/"
-    "global___full/aggregations"
-)
+BASE_URL = "https://d3vax7phxnku8l.cloudfront.net/agg/pqt/data/tdb_data/global___full/aggregations"
 
 
 def log(event: str, **fields: object) -> None:

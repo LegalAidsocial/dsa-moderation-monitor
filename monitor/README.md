@@ -52,3 +52,7 @@ uv run --package monitor ruff format . && uv run --package monitor ruff check .
 - Licence of the data: write it down here (see the Transparency Database terms).
 - Chart colors are a fixed categorical assignment per platform (TikTok/Instagram/Facebook/YouTube/X/Snapchat, in that order), never re-cycled when a filter changes what's visible - same six colors in the dashboard and the static report, from `charts.PLATFORM_COLORS`.
 - Real finding worth flagging for the SCRUM-65 write-up: almost every platform reports ~99-100% of decisions under its own rules rather than "illegal content" (Q2) - only X reports the reverse, ~100% illegal content. Worth checking whether that's a genuine policy difference or a reporting-category quirk before writing it up as fact.
+
+## Licences
+
+See [LICENCES.md](LICENCES.md) for the data licence (DSA Transparency Database, CC BY 4.0) and the licences of the dependencies.
