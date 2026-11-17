@@ -44,12 +44,23 @@ uv run --package monitor pytest monitor/tests
 uv run --package monitor ruff format . && uv run --package monitor ruff check .
 ```
 
+## Docker
+```bash
+docker compose up --build monitor
+```
+Starts just the interactive dashboard (`monitor/Dockerfile`, published on `MONITOR_PORT`,
+default 8501) - the container builds and serves even with an empty `out/`, showing
+"run `monitor build` first" until data exists. `build`/`update`/`alerts`/`report` are one-off
+CLI commands, not a long-running service, so run them inside the running container instead:
+```bash
+docker compose exec monitor monitor build
+```
+
 ## Notes
 - Each zip is unzipped to a temp folder, aggregated by DuckDB, then deleted. Finished zips are skipped on re-runs.
 - `action` is one value per decision, chosen by priority: removal, hiding, reduced_reach, account_action, other.
 - `monitor alerts` excludes the current calendar month from all comparisons - verified live that comparing a finished month to the still-in-progress current one always looks like an 80-90% "drop" on every platform, purely because the month isn't over yet, not a real change.
 - `monitor alerts` was tested against 3+ real past changes (SCRUM-63), not just synthetic fixtures - real numbers pulled live from the actual database, with researched real-world context for each. See `test_find_alerts_on_3_real_past_changes` in `tests/test_alerts.py` for the full detail and sources: a TikTok total-decisions jump coinciding with its Dec 2025 DSA transparency commitments, an independently-cross-checked TikTok drop in Oct 2026 (a third-party tracker reading the same public database got a matching number), and a YouTube election/civic-discourse category spike coinciding with real German regional elections in March 2026.
-- Licence of the data: write it down here (see the Transparency Database terms).
 - Chart colors are a fixed categorical assignment per platform (TikTok/Instagram/Facebook/YouTube/X/Snapchat, in that order), never re-cycled when a filter changes what's visible - same six colors in the dashboard and the static report, from `charts.PLATFORM_COLORS`.
 - Real finding worth flagging for the SCRUM-65 write-up: almost every platform reports ~99-100% of decisions under its own rules rather than "illegal content" (Q2) - only X reports the reverse, ~100% illegal content. Worth checking whether that's a genuine policy difference or a reporting-category quirk before writing it up as fact.
 

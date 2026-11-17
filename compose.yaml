@@ -12,3 +12,17 @@ services:
       OCR_LANG: "${OCR_LANG:-deu}"
       OCR_TIMEOUT: "${OCR_TIMEOUT:-10}"
     restart: unless-stopped
+
+  monitor:
+    build:
+      context: .
+      dockerfile: monitor/Dockerfile
+    ports:
+      - "${MONITOR_PORT:-8501}:8501"
+    environment:
+      MONITOR_DATA_DIR: "${MONITOR_DATA_DIR:-/app/monitor/data}"
+      MONITOR_AGG_DIR: "${MONITOR_AGG_DIR:-/app/monitor/data/agg}"
+      MONITOR_OUT_DIR: "${MONITOR_OUT_DIR:-/app/monitor/out}"
+      MONITOR_COUNTRY: "${MONITOR_COUNTRY:-DE}"
+      MONITOR_MEMORY_LIMIT: "${MONITOR_MEMORY_LIMIT:-4GB}"
+    restart: unless-stopped
