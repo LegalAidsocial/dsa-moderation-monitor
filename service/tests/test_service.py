@@ -58,6 +58,16 @@ def test_gif_checks_every_frame_not_just_the_first(tmp_path: Path):
     assert body["frames_checked"] > 1
 
 
+def test_image_heic_is_decoded():
+    """Plain Pillow raises UnidentifiedImageError on HEIC - confirmed live
+    against Fahim's cleanup dataset, where HEIC (iPhone photos) is ~35% of
+    the files. pillow-heif must be registered so these don't silently fail."""
+    with open(FIXTURES / "banned_sample.heic", "rb") as f:
+        resp = client.post("/image", files={"file": ("test.heic", f, "image/heic")})
+    assert resp.status_code == 200
+    assert resp.json()["verdict"] == "banned"
+
+
 def test_static_image_response_unchanged_shape():
     """Single-frame images (the vast majority of the dataset) must not grow
     a frames_checked key - keeps the existing API contract stable."""
