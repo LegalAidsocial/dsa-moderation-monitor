@@ -12,7 +12,15 @@ from pathlib import Path
 
 import numpy as np
 import onnxruntime as ort
+import pillow_heif
 from PIL import Image
+
+# Plain Pillow can't decode HEIC/HEIF at all (UnidentifiedImageError) -
+# confirmed live against real samples from Fahim's cleanup dataset, where
+# HEIC is ~35% of the files (iPhone photos). This registers libheif as a
+# Pillow plugin so Image.open() handles .heic/.heif transparently, same
+# call path as every other format.
+pillow_heif.register_heif_opener()
 
 _SERVICE_ROOT = Path(__file__).resolve().parents[2]
 MODEL_PATH = Path(
