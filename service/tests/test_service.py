@@ -1,3 +1,4 @@
+import io
 from pathlib import Path
 
 from fastapi.testclient import TestClient
@@ -66,6 +67,27 @@ def test_image_heic_is_decoded():
         resp = client.post("/image", files={"file": ("test.heic", f, "image/heic")})
     assert resp.status_code == 200
     assert resp.json()["verdict"] == "banned"
+
+
+def test_image_ocr_catches_banned_text_the_visual_classifier_alone_misses():
+    """SCRUM-55's OCR pipeline (codefinder.ocr) existed but was never wired
+    into /image - confirmed live, it only ever called the visual classifier.
+    A plain image with no visual symbol at all but a banned phrase rendered
+    as text must still come back banned."""
+    from PIL import ImageDraw
+
+    img = Image.new("RGB", (400, 120), color=(255, 255, 255))
+    draw = ImageDraw.Draw(img)
+    draw.text((20, 40), "sieg heil", fill=(0, 0, 0))
+    buf = io.BytesIO()
+    img.save(buf, format="PNG")
+    buf.seek(0)
+
+    resp = client.post("/image", files={"file": ("text.png", buf, "image/png")})
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body["verdict"] == "banned"
+    assert {"code": "sieg heil", "source": "ocr"} in body["ocr_hits"]
 
 
 def test_static_image_response_unchanged_shape():

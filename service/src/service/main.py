@@ -18,6 +18,7 @@ import time
 from collections.abc import Awaitable, Callable
 from pathlib import Path
 
+from codefinder.ocr import ocr_hits, scan_image
 from fastapi import FastAPI, Request, Response, UploadFile
 from fastapi.responses import JSONResponse
 
@@ -76,6 +77,20 @@ async def check_image(file: UploadFile) -> JSONResponse:
         tmp_path = Path(tmp.name)
     try:
         result = get_classifier().classify(tmp_path)
+        try:
+            hits = ocr_hits(scan_image(tmp_path))
+        except RuntimeError as e:
+            # Tesseract missing entirely - log and fall back to the visual
+            # verdict alone rather than failing the whole request over an
+            # OCR-only problem. scan_image() already swallows per-image
+            # OCR failures (bad file, timeout) into an empty-hits result.
+            logger.info(json.dumps({"event": "ocr_unavailable", "error": str(e)}))
+        else:
+            if hits:
+                # Every codefinder text code is itself banned content - no
+                # needs_context nuance applies to matched text the way it
+                # does to the religious-swastika visual case.
+                result = {**result, "ocr_hits": hits, "verdict": "banned"}
     finally:
         tmp_path.unlink(missing_ok=True)
     return JSONResponse(result)
