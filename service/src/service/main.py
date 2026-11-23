@@ -18,11 +18,11 @@ import time
 from collections.abc import Awaitable, Callable
 from pathlib import Path
 
-from codefinder.ocr import ocr_hits, scan_image
 from fastapi import FastAPI, Request, Response, UploadFile
 from fastapi.responses import JSONResponse
 
 from codefinder import find_codes
+from codefinder.ocr import ocr_hits, scan_image
 from service.image_model import ImageClassifier
 
 logger = logging.getLogger("service")

@@ -1,2 +1,9 @@
 [tool.uv.workspace]
 members = ["codefinder", "service", "monitor"]
+
+[tool.ruff.lint.isort]
+# Without this, ruff's import-sorter only recognizes a workspace package as
+# first-party when run from inside that package - running `ruff check .`
+# from the repo root (as CI and a fresh-clone reviewer would) sorts the same
+# imports differently and flags them (SCRUM-68, found by Hilda).
+known-first-party = ["codefinder", "service", "monitor"]
