@@ -42,8 +42,7 @@ def find_alerts(out_dir: Path, today: date | None = None) -> str:
                    FROM t WINDOW w AS (PARTITION BY platform ORDER BY month))
         SELECT platform, prev_month, month, prev, d FROM s
         WHERE prev IS NOT NULL AND prev > 0 AND abs(d - prev) >= {PLATFORM_PCT / 100} * prev
-        ORDER BY platform, month"""
-    ).fetchall():
+        ORDER BY platform, month""").fetchall():
         pct = round(100.0 * (cur - prev) / prev, 1)
         verb = "jumped" if pct > 0 else "dropped"
         lines.append(
@@ -58,8 +57,7 @@ def find_alerts(out_dir: Path, today: date | None = None) -> str:
         SELECT platform, category, prev_month, month, prev, d FROM s
         WHERE prev IS NOT NULL AND greatest(prev, d) >= {CATEGORY_MIN_DECISIONS}
           AND abs(d - prev) >= {CATEGORY_PCT / 100} * prev
-        ORDER BY platform, category, month"""
-    ).fetchall():
+        ORDER BY platform, category, month""").fetchall():
         pct = round(100.0 * (cur - prev) / prev, 1)
         verb = "doubled" if pct >= 100 else "jumped" if pct > 0 else "dropped"
         lines.append(
@@ -80,8 +78,7 @@ def find_alerts(out_dir: Path, today: date | None = None) -> str:
         )
         SELECT platform, prev_month, month, prev, automated_pct FROM s
         WHERE prev IS NOT NULL AND abs(automated_pct - prev) >= {AUTOMATION_POINTS}
-        ORDER BY platform, month"""
-    ).fetchall():
+        ORDER BY platform, month""").fetchall():
         verb = "dropped" if cur < prev else "rose"
         lines.append(
             f"ALERT: {platform} automated-decision share {verb} from "
